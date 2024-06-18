@@ -21,6 +21,7 @@
 5.执行docker ps 命令不报错，说明安装成功，或者docker images验证docker好不好用
 6.docker ps 默认查看当前正在运行的容器
 7.docker ps -a 查看所有容器
+8.进入容器内部并修改配置文件： docker exec -it 容器名 bash
 
 docker与镜像
 1.查看镜像：docker images
@@ -57,7 +58,7 @@ docker rm -f $(docker ps -aq)
 # 第二部分数据卷
 ```shell
 数据卷是一个虚拟的目录，是容器内目录与宿主机目录之间映射的桥梁，方便操作容器内文件或者方便迁移容器产生的数据。
---- 进入容器 docker exec -it nginx bash
+--- 进入nginx容器 docker exec -it nginx bash
 ```
 ## docker案例一
 ```shell
