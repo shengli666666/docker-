@@ -58,7 +58,12 @@ docker rm -f $(docker ps -aq)
 # 第二部分数据卷
 ```shell
 数据卷是一个虚拟的目录，是容器内目录与宿主机目录之间映射的桥梁，方便操作容器内文件或者方便迁移容器产生的数据。
---- 进入nginx容器 docker exec -it nginx bash
+关于数据卷的一些命令：
+1.查看卷：docker volume ls
+2.创建：docker volume create
+3.删除指定的数据卷：docker volume rm
+4.查看某个数据卷详情：docker volume inspect
+5.清除数据卷：docker volume prune
 ```
 ## docker案例一
 ```shell
@@ -66,6 +71,7 @@ docker rm -f $(docker ps -aq)
 创建Nginx容器，修改nginx容器内的html目录下的index.html文件，查看变化·将静态资源部署到nginx的html目录
 
 ----分析
+--- 进入nginx容器 docker exec -it nginx bash
 zsl@zsl-virtual-machine:~$ docker start nginx
 nginx
  docker ps
