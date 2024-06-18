@@ -11,7 +11,7 @@
 	* [5.多表查询](https://github.com/shengli666666/MySQL-/tree/main#5%E5%A4%9A%E8%A1%A8%E6%9F%A5%E8%AF%A2)
 	* [6.事务](https://github.com/shengli666666/MySQL-/tree/main#6%E4%BA%8B%E5%8A%A1)
 
-# 第一部分docker常见命令
+# 第一部分 docker常见命令
 ```shell
 （自己整理了一部分基本操作命令）
 1.查看docker版本：sudo docker version 或者 docker -v
@@ -55,7 +55,7 @@ docker rm -f 容器名/容器ID 容器名/容器ID 容器名/容器ID
 #删除全部容器
 docker rm -f $(docker ps -aq)
 ```
-# 第二部分数据卷
+# 第二部分 数据卷
 ```shell
 数据卷是一个虚拟的目录，是容器内目录与宿主机目录之间映射的桥梁，方便操作容器内文件或者方便迁移容器产生的数据。
 关于数据卷的一些命令：
@@ -219,7 +219,7 @@ docker network ls
 4.ping mysql因为它们都属于heima这个网关，因此可以直接通过容器名连接
 ```
 
-# 项目实例
+# 项目实例1
 ```shell
 -- 部署java应用
 重要步骤：准备java的
@@ -233,7 +233,7 @@ docker network ls
 6.docker logs -f hm
 ```
 
-# 项目实例
+# 项目实例2
 ```shell
 ---部署前端
 重要步骤：准备前端nginx需要的文件：html文件夹以及nginx.conf
@@ -252,7 +252,7 @@ docker run -d \
 3.docker logs -f hm即可查看得到
 ```
 
-# 项目实例
+# DockerCompose
 ```shell
 ----分散部署没有完整性，可利用DockerCompose
 ---Docker Compose通过一个单独的docker-compose.yml模板文件（YAML格式）来定义一组相关联的应用容器，帮助我们实现多个互相关联的docker容器的快速部署。
