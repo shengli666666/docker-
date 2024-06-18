@@ -9,7 +9,7 @@
 * [4.第四部分 网络](https://github.com/shengli666666/docker-/blob/main/README.md#%E7%AC%AC%E5%9B%9B%E9%83%A8%E5%88%86-%E7%BD%91%E7%BB%9C)
 * [5.项目实例1](https://github.com/shengli666666/docker-/blob/main/README.md#%E9%A1%B9%E7%9B%AE%E5%AE%9E%E4%BE%8B1)
 * [6.项目实例2](https://github.com/shengli666666/docker-/blob/main/README.md#%E9%A1%B9%E7%9B%AE%E5%AE%9E%E4%BE%8B2)
-* [7.DockerCompose](https://github.com/shengli666666/docker-/blob/main/README.md#dockercompose2)
+* [7.DockerCompose](https://github.com/shengli666666/docker-/blob/main/README.md#dockercompose)
 
 
 # 第一部分 docker常见命令
